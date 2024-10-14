@@ -29,12 +29,6 @@ class UK_Dale_Parser:
 
         for house_id in house_indicies:
             house_data = pd.read_csv(os.path.join(self.data_location, f'nilm_solar_HOUSE_{house_id}_FINAL.csv'))
-            if house_id != 1 and house_id != 5:
-                house_data = house_data.drop(columns=['Unnamed: 0.1', 'Unnamed: 0.1.1'])
-            else:
-                house_data = house_data.drop(columns=['Unnamed: 0.1'])
-            house_data['Unnamed: 0'] = pd.to_datetime(house_data['Unnamed: 0'])
-            house_data = house_data.rename(columns={'Unnamed: 0': 'Time'})
             house_data = house_data.set_index('Time')
 
             if house_id == house_indicies[0]:
