@@ -8,6 +8,6 @@ Each folder refers to a different experiment:
 
 An external folder should be created to contain files .csv with signals from the various houses of UK-DALE and REFIT. The files should be internally organized as follows:
 columns= 'Time','active', 'solar', 'kettle', 'microwave','fridge','washing machine', 'dishwasher','net' 
-'net' columns refers to the active power minus solar power production
+- 'net' column refers to the active power minus solar power production
 
 
