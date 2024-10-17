@@ -1,5 +1,5 @@
 # A Deep Cascade Framework for Non-Intrusive Power Disaggregation in Solar-Powered Households
-This repository contains Python code to implement the approach proposed in "A Deep Cascade Framework for Non-Intrusive Power Disaggregation in Solar-Powered Households" submitted to ISCAS 25. The repository contains codes to reproduce the cascade approach as well as five NILM benchmark architectures, implemented in Pytorch. 
+This repository contains Python code to implement the approach proposed in "A Deep Cascade Framework for Non-Intrusive Power Disaggregation in Solar-Powered Households" by Tanoni et al. submitted to ISCAS 25. The repository contains codes to reproduce the cascade approach as well as five NILM benchmark architectures, implemented in Pytorch. 
 
 Each folder refers to a different experiment:
 - 'models' refers to experiments on solar-powered households data with one architecture for all the appliances and solar power 
