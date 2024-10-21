@@ -13,5 +13,6 @@ columns= 'Time','active', 'solar', 'kettle', 'microwave','fridge','washing machi
 - 'Time' is the timestamps columns
 
 The file run.sh allows to run 6 experiments changing the seed and the results.py script will compute the average metrics among the 6 trials.
+Data are available under request. 
 
 
