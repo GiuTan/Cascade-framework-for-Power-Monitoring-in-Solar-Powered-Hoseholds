@@ -39,9 +39,8 @@ class UK_Dale_Parser:
                 entire_data = entire_data.append(house_data, ignore_index=True)
 
         entire_data = entire_data.dropna().copy()
-        # ritorna l'input che è il net load e l'output come lista di solar + nilm
-        return entire_data.values[:, -1:], [entire_data.values[:, 1:2], np.concatenate([entire_data.values[:, :1],entire_data.values[:,2:-1]], axis=1)]
-        #return entire_data.values[:, -1:], [entire_data.values[:, 1:2], entire_data.values[:, 2:-1]]
+
+        return entire_data.values[:, -1:], entire_data.values[:, :-1]
 
 
 
