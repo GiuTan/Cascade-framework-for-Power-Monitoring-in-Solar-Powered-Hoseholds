@@ -8,9 +8,9 @@ Each folder refers to a different experiment:
 
 An external folder called 'datasets' should be created to contain files .csv with signals from the various houses of UK-DALE and REFIT. The files should be internally organized as follows:
 columns= 'Time','active', 'solar', 'kettle', 'microwave','fridge','washing machine', 'dishwasher','net' 
-- 'net' column refers to the active power minus solar power production
-- 'active' is the aggregate active power consumption of the building
-- 'Time' is the timestamps columns
+- 'net' column refers to the active power signal minus solar power production signal
+- 'active' is the aggregate active power consumptio signal of the building
+- 'Time' is the column that contains timestamps
 
 The file run.sh allows to run 6 experiments changing the seed and the results.py script will compute the average metrics among the 6 trials.
 Data are available under request. 
